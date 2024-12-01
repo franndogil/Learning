@@ -16,4 +16,17 @@
  = 8 y cambia el programa para que funcione para cualquier size, generando
  un tablero con el ancho y alto dados. */
 
- 
+
+ let alto = 15
+ let ancho = 15
+ let impresion = ''
+ for (let i=1; i<=alto; i++){
+    if (i % 2 != 0)
+        impresion = impresion + ' '
+    for (let j=1; j<=ancho; j++){
+        impresion = impresion + '#'
+        impresion = impresion + ' '
+    }
+    impresion = impresion + "\n"
+ }
+ console.log(impresion)
